@@ -1,6 +1,7 @@
 """
 Routes and views for the flask application.
 """
+import sklearn
 import numpy as np
 from flask import request, jsonify, render_template
 import pickle
