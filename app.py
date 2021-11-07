@@ -8,11 +8,11 @@ from FlaskWebApp import app
 """
 The flask application package.
 """
+from flask import Flask,request, jsonify, render_template
 import gunicorn
-from flask import Flask
-app = Flask(__name__)
 
 import FlaskWebApp.views
+app = Flask(__name__)
 
 
 if __name__ == '__main__':
